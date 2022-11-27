@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
               <a href="saude.html">Saúde</a>
             </li>
             <li>
-              <a href="ciencia.html">Ciência</a>
+              <a href="ciencia.html">Ciências</a>
             </li>
             <li>
               <a href="fotos.html">Fotos</a>
