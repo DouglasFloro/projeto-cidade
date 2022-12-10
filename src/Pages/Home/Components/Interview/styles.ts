@@ -8,7 +8,7 @@ export const Wrapper = styled.li`
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     padding: 5px;
     line-height: 30px;
     color: #000;

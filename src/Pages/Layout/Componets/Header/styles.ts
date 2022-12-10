@@ -48,11 +48,11 @@ export const Navigation = styled.ul`
   top: 125px;
   li {
     background: #b10333;
-    padding: 0.5em 1.3em;
+    padding: 0.5em 1.3rem;
 
     a {
-      font-size: 0.9em;
-      line-height: 2.1em;
+      font-size: 0.9rem;
+      line-height: 2.1rem;
       text-decoration: none;
       color: #fff;
       &:hover {

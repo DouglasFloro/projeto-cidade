@@ -6,44 +6,13 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 180px 1fr;
 
-  width: 750px;
+  width: 100%;
   max-width: 1140px;
-`;
 
-export const SideMenu = styled.ul`
-  margin: 10px 0;
-
-  width: 180px;
-  /* height: 390px; */
-
-  h2 {
-    padding: 5px;
-    font-size: 1em;
-    background: #294c71;
-    color: #fff;
-  }
-
-  form {
-    margin-top: 10px;
-
-    input {
-      font-size: 0.9em;
-      background: #fff;
-      border: 1px solid;
-      padding: 3px;
-      margin-top: 3px;
-
-      &[type='submit'] {
-        color: #fff;
-        background-color: #b10333;
-        border: 2px solid #870529;
-
-        width: 80px;
-      }
-    }
-  }
+  padding: 30px 0;
 `;
 
 export const PrimaryContent = styled.div`
@@ -55,7 +24,7 @@ export const PrimaryContent = styled.div`
     background: #b10333;
     color: #fff;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     padding: 5px;
     margin-top: 5px;
 
@@ -66,7 +35,7 @@ export const PrimaryContent = styled.div`
 export const TidingsPrimary = styled.div`
   h2 {
     padding: 5px;
-    font-size: 1em;
+    font-size: 1rem;
     background: #294c71;
     color: #fff;
   }
@@ -89,11 +58,11 @@ export const TidingsPrimary = styled.div`
 
   li a {
     h3 {
-      font-size: 0.8em;
+      font-size: 0.8rem;
       color: #3e7ab9;
     }
     p {
-      font-size: 0.7em;
+      font-size: 0.7rem;
     }
   }
 
@@ -110,7 +79,7 @@ export const SecundaryContent = styled.div`
 
   h2 {
     padding: 5px;
-    font-size: 1em;
+    font-size: 1rem;
     background: #294c71;
     color: #fff;
   }
@@ -125,7 +94,7 @@ export const SecundaryContent = styled.div`
 export const SecundaryTidings = styled.div`
   h2 {
     padding: 5px;
-    font-size: 1em;
+    font-size: 1rem;
     background: #294c71;
     color: #fff;
   }
@@ -148,12 +117,12 @@ export const SecundaryTidings = styled.div`
   }
 
   li a h3 {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     color: #3e7ab9;
   }
 
   li a p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
   }
 
   li a h3,
