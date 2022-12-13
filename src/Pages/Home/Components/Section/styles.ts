@@ -42,4 +42,8 @@ export const Wrapper = styled.section`
 
     width: 98%;
   }
+  /* img {
+    width: 80px;
+    position: absolute;
+  } */
 `;

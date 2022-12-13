@@ -12,7 +12,7 @@ type Props = {
  * @param category? string
  * @param content React.ReactNode
  * @param? children React.ReactNode
- * @returns
+ * @return
  */
 export const Section: React.FC<Props> = ({
   title,
