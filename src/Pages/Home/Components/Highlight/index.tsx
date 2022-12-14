@@ -1,45 +1,37 @@
-import { highlights } from '../../mapped';
-import taxi from '../../../../assets/img/taxi.jpg';
-import doutor from '../../../../assets/img/doutor.jpg';
-import { Section } from '../Section';
-import * as S from './styles';
+import { Article } from '../Article';
+import { ContentHighlight } from './Components/content-highlight';
 
-export const Highlight: React.FC = () => {
+type Props = {
+  title: string;
+  category: string;
+  image?: string;
+  description: string;
+  link: string;
+};
+
+/** Conteudo Principal
+ * @param title string
+ * @param category string
+ * @param image string
+ * @param description string
+ * @param link string
+ * @returns
+ */
+
+export const Highlight: React.FC<Props> = ({
+  title,
+  category,
+  image,
+  description,
+  link,
+}: Props) => {
   return (
-    <S.Wrapper>
-      <Section
-        title="Os Taxistas"
-        category="Nova Legislação"
-        content={
-          <>
-            {highlights.map((value) => (
-              <>
-                {/* <Highlit img={} text={} to={} /> */}
-                <img src={taxi} />
-                <p>{value.description}</p>
-                <a href="">{value.name}</a>
-              </>
-            ))}
-          </>
-        }
-      />
-
-      <Section
-        title="Dia do Médido"
-        category="Entrevista Com Gabas"
-        content={
-          <>
-            {highlights.map((value) => (
-              <>
-                {/* <Highlit img={} text={} to={} /> */}
-                <img src={doutor} />
-                <p>{value.description}</p>
-                <a href="">{value.name}</a>
-              </>
-            ))}
-          </>
-        }
-      />
-    </S.Wrapper>
+    <Article
+      title={title}
+      category={category}
+      content={
+        <ContentHighlight image={image} description={description} link={link} />
+      }
+    />
   );
 };

@@ -1,15 +1,14 @@
 import * as S from './styles';
 import tecnologia from '../../../../assets/img/tecnologia.jpg';
 import cidade from '../../../../assets/img/cidade.jpg';
-import { Section } from '../Section';
+import { Article } from '../Article';
 import { recentNews } from '../../mapped';
 
 export const Notice: React.FC = () => {
   return (
-    <S.Wrapper>
-      <Section
+    <>
+      <Article
         title="Notícias Recentes"
-        category="Novas Tecnologias"
         content={
           <>
             {recentNews.map((value) => (
@@ -22,10 +21,8 @@ export const Notice: React.FC = () => {
           </>
         }
       />
-
-      <Section
+      <Article
         title="Notícias Recentes"
-        category="Novas Tecnologias"
         content={
           <>
             {recentNews.map((value) => (
@@ -39,6 +36,6 @@ export const Notice: React.FC = () => {
           </>
         }
       />
-    </S.Wrapper>
+    </>
   );
 };

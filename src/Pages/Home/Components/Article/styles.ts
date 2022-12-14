@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -30,20 +30,15 @@ export const Wrapper = styled.section`
   & > h3 {
     background: #de003e;
     color: #fff;
+    border-radius: 20px;
     text-transform: uppercase;
     font-size: 0.8rem;
-    padding: 5px;
+    padding: 10px;
     margin-top: 5px;
-
-    width: 175px;
   }
   img {
     border: 3px solid #dfdfdf;
 
     width: 98%;
   }
-  /* img {
-    width: 80px;
-    position: absolute;
-  } */
 `;

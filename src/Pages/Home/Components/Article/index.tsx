@@ -14,7 +14,7 @@ type Props = {
  * @param? children React.ReactNode
  * @return
  */
-export const Section: React.FC<Props> = ({
+export const Article: React.FC<Props> = ({
   title,
   category,
   content,

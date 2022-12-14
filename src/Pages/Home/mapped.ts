@@ -1,4 +1,5 @@
-import tecnologia from '../../assets/img/tecnologia.jpg';
+import doutor from '../../assets/img/doutor.jpg';
+import taxi from '../../assets/img/taxi.jpg';
 
 /**
  * Lista de entrevista
@@ -49,15 +50,26 @@ export const interviewList: { name: string }[] = [
 export const highlights: {
   title: string;
   category: string;
+  image: string;
   description: string;
-  name: string;
+  link: string;
 }[] = [
   {
-    title: 'Destaques',
+    title: 'Taxistas',
     category: 'Nova Legislação',
+    image: taxi,
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting',
-    name: 'Leia mais',
+    link: 'noticiacidade.com/taxi',
+  },
+
+  {
+    title: 'Os Médicos',
+    category: 'Entrevista com Dr Gabas',
+    image: doutor,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting',
+    link: 'noticiacidade.com/doutor',
   },
 ];
 

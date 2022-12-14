@@ -1,11 +1,11 @@
 import { interviewList } from '../../mapped';
 import { Interview } from '../Interview';
-import { Section } from '../Section';
+import { Article } from '../Article';
 import * as S from './styles';
 export const Sidebar: React.FC = () => {
   return (
     <S.Wrapper>
-      <Section
+      <Article
         title="Entrevistas"
         content={
           <>
@@ -15,7 +15,7 @@ export const Sidebar: React.FC = () => {
           </>
         }
       />
-      <Section
+      <Article
         title="News"
         content={
           <form>
