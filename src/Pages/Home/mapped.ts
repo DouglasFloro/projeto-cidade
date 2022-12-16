@@ -1,5 +1,7 @@
 import doutor from '../../assets/img/doutor.jpg';
 import taxi from '../../assets/img/taxi.jpg';
+import cidade from '../../assets/img/cidade.jpg';
+import { RecentNewsProps } from './Components/types';
 
 /**
  * Lista de entrevista
@@ -48,6 +50,7 @@ export const interviewList: { name: string }[] = [
  * @return
  */
 export const highlights: {
+  id: number;
   title: string;
   category: string;
   image: string;
@@ -55,6 +58,7 @@ export const highlights: {
   link: string;
 }[] = [
   {
+    id: 0,
     title: 'Taxistas',
     category: 'Nova Legislação',
     image: taxi,
@@ -64,6 +68,7 @@ export const highlights: {
   },
 
   {
+    id: 1,
     title: 'Os Médicos',
     category: 'Entrevista com Dr Gabas',
     image: doutor,
@@ -75,25 +80,78 @@ export const highlights: {
 
 /**
  * Noticias Recentes
- * @param category string
- * @param description string
+ * @param title string
+ * @param content { image: string; category: string; description: string }
  * @return
  */
-export const recentNews: { category: string; description: string }[] = [
+export const recentNews: RecentNewsProps[] = [
   {
-    category: 'Novas Tecnologias ',
-    description: 'Loren Ipsum is simply dummy text of the printing...',
+    title: 'Noticias Recentes',
+    id: 0,
+    content: [
+      {
+        id: 0,
+        image: cidade,
+        category: 'Novas Tecnologias',
+        description:
+          'Loren Ipsum is simply dummy text of the printing Loren Ipsum is simply dummy text of the printingLoren Ipsum is simply.',
+      },
+      {
+        id: 1,
+        image: cidade,
+        category: 'Novas Tecnologias',
+        description:
+          'Loren Ipsum is simply dummy text of the printing Loren Ipsum is simply dummy text of the printingLoren Ipsum is simply.',
+      },
+      {
+        id: 2,
+        image: cidade,
+        category: 'Novas Tecnologias',
+        description:
+          'Loren Ipsum is simply dummy text of the printing Loren Ipsum is simply dummy text of the printingLoren Ipsum is simply.',
+      },
+      {
+        id: 3,
+        image: cidade,
+        category: 'Novas Tecnologias',
+        description:
+          'Loren Ipsum is simply dummy text of the printing Loren Ipsum is simply dummy text of the printingLoren Ipsum is simply.',
+      },
+    ],
   },
   {
-    category: 'Novas Tecnologias',
-    description: 'Loren Ipsum is simply dummy text of the printing...',
-  },
-  {
-    category: 'Novas Tecnologias',
-    description: 'Loren Ipsum is simply dummy text of the printing...',
-  },
-  {
-    category: 'Novas Tecnologias',
-    description: 'Loren Ipsum is simply dummy text of the printing...',
+    title: 'Taxistas',
+    id: 1,
+    content: [
+      {
+        id: 0,
+        image: cidade,
+        category: 'Novas Tecnologias',
+        description:
+          'Loren Ipsum is simply dummy text of the printing Loren Ipsum is simply dummy text of the printingLoren Ipsum is simply.',
+      },
+      {
+        id: 1,
+        image: cidade,
+        category: 'Novas Tecnologias',
+        description:
+          'Loren Ipsum is simply dummy text of the printing Loren Ipsum is simply dummy text of the printingLoren Ipsum is simply.',
+      },
+
+      {
+        id: 2,
+        image: cidade,
+        category: 'Novas Tecnologias',
+        description:
+          'Loren Ipsum is simply dummy text of the printing Loren Ipsum is simply dummy text of the printingLoren Ipsum is simply.',
+      },
+      {
+        id: 3,
+        image: cidade,
+        category: 'Novas Tecnologias',
+        description:
+          'Loren Ipsum is simply dummy text of the printing Loren Ipsum is simply dummy text of the printingLoren Ipsum is simply.',
+      },
+    ],
   },
 ];

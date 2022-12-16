@@ -61,3 +61,12 @@ export const Navigation = styled.ul`
     }
   }
 `;
+
+export const Button = styled.div`
+  width: auto;
+  height: auto;
+
+  position: absolute;
+  right: 74px;
+  bottom: 50px;
+`;

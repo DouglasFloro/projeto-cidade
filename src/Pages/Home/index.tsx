@@ -4,7 +4,7 @@ import { Sidebar } from './Components/Sidebar';
 import { Highlight } from './Components/Highlight';
 import { Notice } from './Components/Notice';
 import taxi from '../../assets/img/taxi.jpg';
-import { highlights } from './mapped';
+import { highlights, recentNews } from './mapped';
 
 export const Home: React.FC = () => {
   return (
@@ -15,6 +15,7 @@ export const Home: React.FC = () => {
           {highlights.map((value) => {
             return (
               <Highlight
+                key={value.id}
                 title={value.title}
                 category={value.category}
                 image={value.image}
@@ -23,7 +24,16 @@ export const Home: React.FC = () => {
               />
             );
           })}
-          <Notice />
+
+          {recentNews.map((value) => {
+            return (
+              <Notice
+                key={value.id}
+                title={value.title}
+                content={value.content}
+              />
+            );
+          })}
         </S.Content>
       </S.Container>
     </S.Wrapper>

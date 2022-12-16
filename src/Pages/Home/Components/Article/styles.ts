@@ -13,13 +13,12 @@ export const Wrapper = styled.article`
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 
-    width: 160px;
     height: 40px;
 
     background: #284c70;
-    border-radius: 5px 20px 20px 5px;
+    border-radius: 5px 20px;
 
     font-weight: 700;
     font-size: 1rem;
@@ -35,10 +34,5 @@ export const Wrapper = styled.article`
     font-size: 0.8rem;
     padding: 10px;
     margin-top: 5px;
-  }
-  img {
-    border: 3px solid #dfdfdf;
-
-    width: 98%;
   }
 `;

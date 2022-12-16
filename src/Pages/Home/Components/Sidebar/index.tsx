@@ -10,7 +10,7 @@ export const Sidebar: React.FC = () => {
         content={
           <>
             {interviewList.map((value) => (
-              <Interview name={value.name} />
+              <Interview key={value.name} name={value.name} />
             ))}
           </>
         }

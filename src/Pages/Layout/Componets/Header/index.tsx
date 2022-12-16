@@ -1,6 +1,10 @@
+import { useState } from 'react';
+import { SwitchButton } from './Components/switch-button';
 import * as S from './styles';
 
 export const Header: React.FC = () => {
+  const [isActive, setIsActive] = useState(false);
+
   const navList: { href: string; name: string }[] = [
     {
       href: 'home.html',
@@ -52,6 +56,13 @@ export const Header: React.FC = () => {
             </li>
           ))}
         </S.Navigation>
+        <S.Button>
+          <SwitchButton
+            variant="horizontal"
+            isActive={isActive}
+            onClick={() => setIsActive((value) => !value)}
+          />
+        </S.Button>
       </S.Container>
     </S.Wrapper>
   );
